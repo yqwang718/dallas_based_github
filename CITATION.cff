@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite the associated paper via the
+  `preferred-citation` block below.
+title: "dallas_based_github: Replication package for the Dallas DCM base paper"
+abstract: >-
+  GPU-accelerated conditional-logit discrete choice modeling for offender and
+  victim mobility in Dallas, TX. Implements maximum-likelihood estimation over
+  the full alternative set using JAX, with a chunked-sum objective that fits on
+  consumer-grade GPUs. Ships the base-paper runners, robustness scripts, a
+  three-step preprocessing pipeline, and synthetic data that mirror the
+  analytic schema.
+type: software
+authors:
+  - family-names: Wang
+    given-names: Yuqing
+    email: yqwang1@uci.edu
+    affiliation: "Irvine Lab for the Study of Space and Crime (ILSSC), University of California, Irvine"
+  - family-names: Hipp
+    given-names: John R.
+    affiliation: "Irvine Lab for the Study of Space and Crime (ILSSC), University of California, Irvine"
+version: "0.1.0"
+date-released: "2026-04-22"
+license: PolyForm-Noncommercial-1.0.0
+repository-code: "https://github.com/yqwang718/dallas_based_github"
+keywords:
+  - discrete choice model
+  - conditional logit
+  - spatial choice
+  - criminology
+  - offender mobility
+  - victim mobility
+  - journey to crime
+  - distance decay
+  - social distance
+  - JAX
+  - maximum likelihood estimation
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Wang
+      given-names: Yuqing
+    - family-names: Hipp
+      given-names: John R.
+  title: >-
+    Investigating how social and physical distance impact offender and victim
+    mobility with Discrete Choice Modeling
+  journal: "Journal of Quantitative Criminology"
+  year: 2026
+  notes: >-
+    Conditionally accepted. Update with volume, issue, pages, and DOI when
+    the published version is assigned.

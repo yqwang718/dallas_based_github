@@ -1,0 +1,35 @@
+# DCM Model Configuration (Dallas Based)
+
+data:
+  data_root: "data/features"
+  agent: "victims"
+  block: "blocks"
+  agent_filter_dict: null
+  block_filter_dict: null
+  filter_nonzero_features: false
+
+model:
+  model_type: "base"
+  distance_interaction: "l2_log"
+  race_interaction: "dissimilarity"
+  income_interaction: "abs_diff"
+  include_extra_features: false
+
+  # Features to use in the model
+  feature_names:
+    - "log_total_population"
+    - "log_total_employees"
+    - "log_landsize"
+    - "avg_household_size"
+    - "home_owners_perc"
+    - "underage_perc"
+    - "log_attractions"
+    - "log_transit_stops"
+
+optimizer:
+  chunk_size: 16384
+  max_iter: 2000
+  gtol: 1.0e-6
+  ftol: 1.0e-9
+
+output_file: "data/estimators/base/victims.json"

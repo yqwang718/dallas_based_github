@@ -1,0 +1,70 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dcm"
+version = "0.1.0"
+description = "GPU-accelerated discrete choice modeling for the Dallas crime-mobility base paper"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "PolyForm-Noncommercial-1.0.0" }
+authors = [
+    { name = "Yuqing Wang", email = "yqwang1@uci.edu" },
+    { name = "John R. Hipp" },
+]
+keywords = [
+    "discrete choice model",
+    "conditional logit",
+    "spatial choice",
+    "criminology",
+    "offender mobility",
+    "victim mobility",
+    "JAX",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "jax>=0.4.20",
+    "matplotlib>=3.7",
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "pydantic>=2.0",
+    "pyyaml>=6.0",
+    "scipy>=1.10",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+geo = [
+    "geopandas>=0.14",
+    "networkx>=3.0",
+    "osmnx>=1.8",
+    "pyproj>=3.6",
+    "shapely>=2.0",
+]
+preprocessing = [
+    "geopandas>=0.14",
+    "networkx>=3.0",
+    "osmnx>=1.8",
+    "pyproj>=3.6",
+    "shapely>=2.0",
+]
+geocoding = ["arcgis>=2.3", "geopandas>=0.14"]
+
+[project.urls]
+Homepage = "https://github.com/yqwang718/dallas_based_github"
+Issues = "https://github.com/yqwang718/dallas_based_github/issues"
+
+[tool.setuptools.packages.find]
+include = ["dcm*"]
+exclude = ["scripts*", "data*"]

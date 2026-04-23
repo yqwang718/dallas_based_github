@@ -1,0 +1,14 @@
+{
+    "Black": "BLACK",
+    "Hispanic or Latino": "HISPANIC",
+    "White": "WHITE",
+    "Asian": "ASIAN",
+    "Middle Eastern": "OTHER",
+    "Unknown": "OTHER",
+    "Non-Hispanic or Latino": "OTHER",
+    "American Indian or Alaska Native": "OTHER",
+    "Native Hawaiian/Pacific Islander": "OTHER",
+    "NH": "OTHER",
+    "TEST": "OTHER",
+    "H": "HISPANIC"
+}
