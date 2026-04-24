@@ -3,7 +3,7 @@
 Replication code and synthetic data for:
 
 > Wang, Y. & Hipp, J. R. *Investigating how social and physical distance impact
-> offender and victim mobility with Discrete Choice Modeling.* (Under review.)
+> offender and victim mobility with Discrete Choice Modeling.* (Conditionally accept.)
 
 This repository implements a GPU-accelerated discrete choice model (DCM) that
 estimates how physical distance, racial dissimilarity, and income difference
