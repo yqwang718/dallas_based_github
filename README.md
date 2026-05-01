@@ -312,4 +312,4 @@ any future version of it, under different or additional license terms
 ## Contact
 
 Issues and pull requests welcome. For questions about the method or the
-analysis, contact Yuqing Wang (yqwang1@uci.edu).
+analysis, contact Yuqing (Yuki) Wang (yqwang1@uci.edu).
