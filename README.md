@@ -2,8 +2,9 @@
 
 Replication code and synthetic data for:
 
-> Wang, Y. & Hipp, J. R. *Investigating how social and physical distance impact
-> offender and victim mobility with Discrete Choice Modeling.* (Conditionally accept.)
+> Wang, Y. & Hipp, J. R. (2026). *Investigating how social and physical
+> distance impact offender and victim mobility with Discrete Choice Modeling.*
+> Journal of Quantitative Criminology. [Springer article](https://link.springer.com/article/10.1007/s10940-026-09677-3).
 
 This repository implements a GPU-accelerated discrete choice model (DCM) that
 estimates how physical distance, racial dissimilarity, and income difference
@@ -260,8 +261,10 @@ The tests cover:
 
 ## Hardware Notes
 
-The paper runs on an NVIDIA RTX 3070 (8 GB VRAM). For synthetic smoke tests
-CPU is sufficient and takes ~1 minute. For the full dataset on CPU, expect
+The paper's estimations were run on a standard personal computer equipped with
+a consumer-grade NVIDIA RTX 3070 GPU. The full replication has also been tested
+on a MacBook Air M4 (24 GB memory). For synthetic smoke tests, CPU is
+sufficient and takes ~1 minute. For the full dataset on CPU, expect
 wall-clock times on the order of hours per model; on the RTX 3070, a few
 minutes per model.
 
@@ -284,7 +287,8 @@ and the paper. Citation metadata is in `CITATION.cff`.
   author  = {Wang, Yuqing and Hipp, John R.},
   journal = {Journal of Quantitative Criminology},
   year    = {2026},
-  note    = {Conditionally accepted}
+  doi     = {10.1007/s10940-026-09677-3},
+  url     = {https://link.springer.com/article/10.1007/s10940-026-09677-3}
 }
 ```
 
@@ -312,4 +316,4 @@ any future version of it, under different or additional license terms
 ## Contact
 
 Issues and pull requests welcome. For questions about the method or the
-analysis, contact Yuqing (Yuki) Wang (yqwang1@uci.edu).
+analysis, contact Yuqing Wang (yqwang1@uci.edu).
